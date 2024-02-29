@@ -1,0 +1,2063 @@
+{
+	"info": {
+		"_postman_id": "abfe0671-3649-433e-970d-4e9857cf64c2",
+		"name": "Store Reports",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5621878"
+	},
+	"item": [
+		{
+			"name": "store-reports Copy",
+			"item": [
+				{
+					"name": "get-store-ebitda-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store ebitda report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-ebitda-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-ebitda-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-ebitda-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-ebitda-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 613,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"month\": \"<string>\",\n      \"monthAndYear\": \"<string>\",\n      \"price\": \"<string>\"\n    },\n    {\n      \"month\": \"<string>\",\n      \"monthAndYear\": \"<string>\",\n      \"price\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-turnover-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store turnover report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-turnover-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-turnover-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-turnover-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-turnover-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 423,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"percent\": \"<string>\"\n    },\n    {\n      \"percent\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-performance-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store performance report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-performance-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-performance-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-performance-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-performance-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 500,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"dailyTotal\": \"<string>\",\n    \"monthlyTotal\": \"<string>\",\n    \"yearlyTotal\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-performance-daily-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store daily performance report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-performance-daily-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-performance-daily-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-performance-daily-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-performance-daily-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 602,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"dailyTotal\": \"<string>\"\n    },\n    {\n      \"dailyTotal\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-performance-monthly-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store monthly performance report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-performance-monthly-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-performance-monthly-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-performance-monthly-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-performance-monthly-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 423,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"monthlyTotal\": \"<string>\"\n    },\n    {\n      \"monthlyTotal\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-performance-yearly-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store yearly performance report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-performance-yearly-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-performance-yearly-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-performance-yearly-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-performance-yearly-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 612,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"yearlyTotal\": \"<string>\"\n    },\n    {\n      \"yearlyTotal\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-zero-material-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store zero material report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-zero-material-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-zero-material-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-zero-material-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-zero-material-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 604,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"materialName\": \"<string>\",\n      \"materialDayCount\": \"<string>\"\n    },\n    {\n      \"materialName\": \"<string>\",\n      \"materialDayCount\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-stock-day-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store stock day report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-stock-day-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-stock-day-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-stock-day-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-stock-day-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 603,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"materialName\": \"<string>\",\n      \"stockDay\": \"<string>\",\n      \"piece\": \"<string>\"\n    },\n    {\n      \"materialName\": \"<string>\",\n      \"stockDay\": \"<string>\",\n      \"piece\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-materials-not-for-sale-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store materials not for sale report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-materials-not-for-sale-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-materials-not-for-sale-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-materials-not-for-sale-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-materials-not-for-sale-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 400,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"title\": \"<string>\",\n      \"value\": \"<string>\"\n    },\n    {\n      \"title\": \"<string>\",\n      \"value\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-avg-turnover-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store average turnover report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-avg-turnover-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-avg-turnover-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-avg-turnover-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-avg-turnover-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 602,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"months\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"years\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"thisYearAverageTurnovers\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"lastYearAverageTurnovers\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-avg-customer-count-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store average customer count report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-avg-customer-count-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-avg-customer-count-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-avg-customer-count-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-avg-customer-count-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 403,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"months\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"years\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"thisYearAverageCustomerCount\": [\n      \"<string>\",\n      \"<string>\"\n    ],\n    \"lastYearAverageCustomerCount\": [\n      \"<string>\",\n      \"<string>\"\n    ]\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-fruit-and-vegetables-turnover-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store fruit and vegetables turnover report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-fruit-and-vegetables-turnover-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-fruit-and-vegetables-turnover-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-fruit-and-vegetables-turnover-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-fruit-and-vegetables-turnover-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 500,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"totalTurnover\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-loomis-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store loomis report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-loomis-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-loomis-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-loomis-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-loomis-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 613,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"storeCode\": \"<string>\",\n      \"date\": \"<string>\",\n      \"sentCash\": \"<double>\",\n      \"loomisCash\": \"<integer>\",\n      \"differenceLoomisAndStore\": \"<double>\",\n      \"yesterdayCash\": \"<double>\",\n      \"differenceLoomisAndYesterday\": \"<double>\"\n    },\n    {\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"storeCode\": \"<string>\",\n      \"date\": \"<string>\",\n      \"sentCash\": \"<double>\",\n      \"loomisCash\": \"<integer>\",\n      \"differenceLoomisAndStore\": \"<double>\",\n      \"yesterdayCash\": \"<double>\",\n      \"differenceLoomisAndYesterday\": \"<double>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-cash-difference-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store cash difference report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-cash-difference-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-cash-difference-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-cash-difference-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-cash-difference-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 0,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"date\": \"<string>\",\n      \"totalCash\": \"<double>\",\n      \"totalDayCash\": \"<double>\",\n      \"questionableCash\": \"<integer>\",\n      \"differenceQuestionableCash\": \"<double>\",\n      \"differenceCash\": \"<double>\"\n    },\n    {\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"date\": \"<string>\",\n      \"totalCash\": \"<double>\",\n      \"totalDayCash\": \"<double>\",\n      \"questionableCash\": \"<integer>\",\n      \"differenceQuestionableCash\": \"<double>\",\n      \"differenceCash\": \"<double>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-energy-monitoring-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store energy monitoring report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-energy-monitoring-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-energy-monitoring-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-energy-monitoring-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-energy-monitoring-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 601,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"invoiceId\": \"<string>\",\n      \"firstRead\": \"<string>\",\n      \"lastRead\": \"<string>\",\n      \"consumptionKW\": \"<double>\",\n      \"consumptionTL\": \"<double>\",\n      \"consumptionDayCount\": \"<integer>\",\n      \"dailyconsumptionKW\": \"<double>\",\n      \"consumptionM2KW\": \"<double>\",\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"invoiceOrder\": \"<string>\"\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"invoiceId\": \"<string>\",\n      \"firstRead\": \"<string>\",\n      \"lastRead\": \"<string>\",\n      \"consumptionKW\": \"<double>\",\n      \"consumptionTL\": \"<double>\",\n      \"consumptionDayCount\": \"<integer>\",\n      \"dailyconsumptionKW\": \"<double>\",\n      \"consumptionM2KW\": \"<double>\",\n      \"regionCode\": \"<string>\",\n      \"regionName\": \"<string>\",\n      \"invoiceOrder\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-instant-turnover-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get store instant turnover report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-instant-turnover-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-instant-turnover-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-instant-turnover-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-instant-turnover-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 0,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"safesTotalTurnover\": \"<string>\",\n    \"totalTransactionCount\": \"<integer>\",\n    \"storeInstantSafeTurnover\": [\n      {\n        \"region\": \"<string>\",\n        \"dateNow\": \"<string>\",\n        \"description\": \"<string>\",\n        \"lastTransactionDate\": \"<string>\",\n        \"storeCode\": \"<string>\",\n        \"date\": \"<string>\",\n        \"transactionCount\": \"<string>\",\n        \"total\": \"<string>\",\n        \"isToday\": \"<boolean>\",\n        \"safebox\": \"<string>\"\n      },\n      {\n        \"region\": \"<string>\",\n        \"dateNow\": \"<string>\",\n        \"description\": \"<string>\",\n        \"lastTransactionDate\": \"<string>\",\n        \"storeCode\": \"<string>\",\n        \"date\": \"<string>\",\n        \"transactionCount\": \"<string>\",\n        \"total\": \"<string>\",\n        \"isToday\": \"<boolean>\",\n        \"safebox\": \"<string>\"\n      }\n    ]\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-active-reactive-check-report",
+					"item": [
+						{
+							"name": "Get Active Reactive Check",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/store-reports/get-active-reactive-check-report",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"store-reports",
+										"get-active-reactive-check-report"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-active-reactive-check-report",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-active-reactive-check-report"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"processStatus\": 423,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"version\": \"<string>\",\n    \"statusCode\": \"<integer>\",\n    \"message\": \"<string>\",\n    \"isError\": \"<boolean>\",\n    \"responseException\": {\n      \"nullable\": true\n    },\n    \"result\": [\n      {\n        \"isActive\": \"<boolean>\",\n        \"storeCode\": \"<string>\",\n        \"storeName\": \"<string>\"\n      },\n      {\n        \"isActive\": \"<boolean>\",\n        \"storeCode\": \"<string>\",\n        \"storeName\": \"<string>\"\n      }\n    ]\n  }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "unprinted-tag-check",
+					"item": [
+						{
+							"name": "Get Unprinted Tag Check",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/store-reports/unprinted-tag-check",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"store-reports",
+										"unprinted-tag-check"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/unprinted-tag-check",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"unprinted-tag-check"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"processStatus\": 610,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"version\": \"<string>\",\n    \"statusCode\": \"<integer>\",\n    \"message\": \"<string>\",\n    \"isError\": \"<boolean>\",\n    \"responseException\": {\n      \"nullable\": true\n    },\n    \"result\": [\n      {\n        \"isActive\": \"<boolean>\",\n        \"storeCode\": \"<string>\"\n      },\n      {\n        \"isActive\": \"<boolean>\",\n        \"storeCode\": \"<string>\"\n      }\n    ]\n  }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "GetReturnedProductDetailByStoreCode",
+					"item": [
+						{
+							"name": "/store-reports/GetReturnedProductDetailByStoreCode",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/store-reports/GetReturnedProductDetailByStoreCode",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"store-reports",
+										"GetReturnedProductDetailByStoreCode"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: bearer",
+												"key": "Authorization",
+												"value": "Bearer <token>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/GetReturnedProductDetailByStoreCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"GetReturnedProductDetailByStoreCode"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"processStatus\": 607,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"storeTotal\": \"<string>\",\n      \"generalTotal\": \"<string>\",\n      \"returnedProductChilds\": [\n        {\n          \"productCode\": \"<string>\",\n          \"productName\": \"<string>\",\n          \"returnedCount\": \"<integer>\",\n          \"returnedTotal\": \"<string>\",\n          \"salesTotal\": \"<string>\"\n        },\n        {\n          \"productCode\": \"<string>\",\n          \"productName\": \"<string>\",\n          \"returnedCount\": \"<integer>\",\n          \"returnedTotal\": \"<string>\",\n          \"salesTotal\": \"<string>\"\n        }\n      ]\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"storeTotal\": \"<string>\",\n      \"generalTotal\": \"<string>\",\n      \"returnedProductChilds\": [\n        {\n          \"productCode\": \"<string>\",\n          \"productName\": \"<string>\",\n          \"returnedCount\": \"<integer>\",\n          \"returnedTotal\": \"<string>\",\n          \"salesTotal\": \"<string>\"\n        },\n        {\n          \"productCode\": \"<string>\",\n          \"productName\": \"<string>\",\n          \"returnedCount\": \"<integer>\",\n          \"returnedTotal\": \"<string>\",\n          \"salesTotal\": \"<string>\"\n        }\n      ]\n    }\n  ]\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-hourly-bread-turnover-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get Store Hourly Bread Turnover Report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-hourly-bread-turnover-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-hourly-bread-turnover-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-hourly-bread-turnover-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-hourly-bread-turnover-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 500,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": {\n    \"totalTurnover\": \"<string>\"\n  }\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-inventory-sales-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get Store Inventory Report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-inventory-sales-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-inventory-sales-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-inventory-sales-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-inventory-sales-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 620,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"inventoryDate\": \"<dateTime>\",\n      \"inventoryStartDate\": \"<dateTime>\",\n      \"yearMonth\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"salesRevenue\": \"<string>\",\n      \"partialAmount\": \"<string>\",\n      \"differenceLostPartialAmount\": \"<string>\",\n      \"lostRevenue\": \"<string>\",\n      \"differenceRevenue\": \"<string>\",\n      \"partialRevenue\": \"<string>\",\n      \"differenceLostPartialRevenue\": \"<string>\"\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"inventoryDate\": \"<dateTime>\",\n      \"inventoryStartDate\": \"<dateTime>\",\n      \"yearMonth\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"salesRevenue\": \"<string>\",\n      \"partialAmount\": \"<string>\",\n      \"differenceLostPartialAmount\": \"<string>\",\n      \"lostRevenue\": \"<string>\",\n      \"differenceRevenue\": \"<string>\",\n      \"partialRevenue\": \"<string>\",\n      \"differenceLostPartialRevenue\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-inventory-piecemeal",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get Store Piecemeal Inventory Report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-inventory-piecemeal/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-inventory-piecemeal",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-inventory-piecemeal/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-inventory-piecemeal",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 602,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"yearMonth\": \"<string>\",\n      \"storageCondition\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"partialInventoryAmount\": \"<string>\",\n      \"currencyUnit\": \"<string>\",\n      \"inventoryStartDate\": \"<dateTime>\",\n      \"inventoryDate\": \"<dateTime>\",\n      \"differenceLostAmount\": \"<string>\",\n      \"differenceLostPartialInventory\": \"<string>\",\n      \"salesRevenue\": \"<string>\"\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"yearMonth\": \"<string>\",\n      \"storageCondition\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"partialInventoryAmount\": \"<string>\",\n      \"currencyUnit\": \"<string>\",\n      \"inventoryStartDate\": \"<dateTime>\",\n      \"inventoryDate\": \"<dateTime>\",\n      \"differenceLostAmount\": \"<string>\",\n      \"differenceLostPartialInventory\": \"<string>\",\n      \"salesRevenue\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-inventory-continually",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "Get Store Continually Inventory Report",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-inventory-continually/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-inventory-continually",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-inventory-continually/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-inventory-continually",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 610,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"yearMonth\": \"<string>\",\n      \"storageCondition\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"currencyUnit\": \"<string>\",\n      \"salesRevenue\": \"<string>\"\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"yearMonth\": \"<string>\",\n      \"storageCondition\": \"<string>\",\n      \"lostAmount\": \"<string>\",\n      \"differenceAmount\": \"<string>\",\n      \"currencyUnit\": \"<string>\",\n      \"salesRevenue\": \"<string>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get-store-method-audit-report",
+					"item": [
+						{
+							"name": "{storeCode}",
+							"item": [
+								{
+									"name": "/store-reports/get-store-method-audit-report/:storeCode",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/store-reports/get-store-method-audit-report/:storeCode",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"store-reports",
+												"get-store-method-audit-report",
+												":storeCode"
+											],
+											"variable": [
+												{
+													"key": "storeCode",
+													"value": "F240"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: bearer",
+														"key": "Authorization",
+														"value": "Bearer <token>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store-reports/get-store-method-audit-report/:storeCode",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store-reports",
+														"get-store-method-audit-report",
+														":storeCode"
+													],
+													"variable": [
+														{
+															"key": "storeCode"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"processStatus\": 607,\n  \"friendlyMessage\": {\n    \"title\": \"<string>\",\n    \"message\": \"<string>\",\n    \"cancelable\": \"<boolean>\",\n    \"buttonPositive\": \"<string>\",\n    \"buttonNegative\": \"<string>\",\n    \"buttonNeutral\": \"<string>\"\n  },\n  \"serverTime\": \"<integer>\",\n  \"payload\": [\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"points\": \"<double>\",\n      \"year\": \"<integer>\",\n      \"month\": \"<integer>\"\n    },\n    {\n      \"storeCode\": \"<string>\",\n      \"storeName\": \"<string>\",\n      \"points\": \"<double>\",\n      \"year\": \"<integer>\",\n      \"month\": \"<integer>\"\n    }\n  ]\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1YTgwZTlmLTBmZWUtNGM5MS05NzczLWRiZDEwMzQ1MjhiNiIsImVtYWlsIjoiOTkxNmJzMTRAYTEwMS5jb20udHIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJFUlPEsE4gQkFMQ0kiLCJ1dWlkIjoiM2UzOGU4MTYtMDg3OS00ZTg2LTliZGUtMjAxODZkYzlkZTI0IiwiU3BSZWdpc3RlciI6IjEyNDA2OCIsInJvbGUiOiJCUyIsImV4cCI6MTcwMDk4NjM2NywiaXNzIjoiaHR0cHM6Ly9zb3NwLmExMDEuY29tLnRyIiwiYXVkIjoiaHR0cHM6Ly9zb3NwLmExMDEuY29tLnRyIn0.5CNyjTrBvBJt5ifjH8kL8GzLy_uMxBnkBr7mZ__qh3k",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://sosp.a101.com.tr/api",
+			"type": "string"
+		},
+		{
+			"key": "bearerToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU1YTgwZTlmLTBmZWUtNGM5MS05NzczLWRiZDEwMzQ1MjhiNiIsImVtYWlsIjoiOTkxNmJzMTRAYTEwMS5jb20udHIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJFUlPEsE4gQkFMQ0kiLCJ1dWlkIjoiM2UzOGU4MTYtMDg3OS00ZTg2LTliZGUtMjAxODZkYzlkZTI0IiwiU3BSZWdpc3RlciI6IjEyNDA2OCIsInJvbGUiOiJCUyIsImV4cCI6MTcwMDk4NjM2NywiaXNzIjoiaHR0cHM6Ly9zb3NwLmExMDEuY29tLnRyIiwiYXVkIjoiaHR0cHM6Ly9zb3NwLmExMDEuY29tLnRyIn0.5CNyjTrBvBJt5ifjH8kL8GzLy_uMxBnkBr7mZ__qh3k",
+			"type": "string"
+		}
+	]
+}
