@@ -23,10 +23,11 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-    <groupId>org.graalvm.polyglot</groupId>
+    <groupId>org.graalvm.sdk</groupId>
     <artifactId>graal-sdk</artifactId>
-    <version>23.0.2</version>
+    <version>22.3.3</version>
 </dependency>
+
 
     </dependencies>
 
