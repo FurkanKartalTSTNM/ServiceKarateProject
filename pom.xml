@@ -22,6 +22,12 @@
             <version>${karate.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+    <groupId>org.graalvm.polyglot</groupId>
+    <artifactId>graal-sdk</artifactId>
+    <version>23.0.2</version>
+</dependency>
+
     </dependencies>
 
     <build>
