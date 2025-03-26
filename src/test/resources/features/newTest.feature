@@ -4,7 +4,7 @@ Feature: Grocery API
       # Set a configuration for the payload
     * url baseUrl
 
-  @deneme
+  @getAllProducts
   Scenario: Get All Products from Grocery
     Given header Content-Type = 'application/json'
     And path '/allGrocery'
@@ -15,6 +15,7 @@ Feature: Grocery API
     And match response.data[*].name == '#present'
     And match response.data[*].stock == '#present'
 
+  @getGroceryByName
   Scenario Outline: Get Grocery Details with a name
     Given header Content-Type = 'application/json'
     And path '/allGrocery/<name>'
@@ -30,6 +31,7 @@ Feature: Grocery API
       | apple  |
       | grapes |
 
+  @addNewProduct
   Scenario: Add a new product to the Grocery Basket
     * def jsonBody =
     """
@@ -47,20 +49,17 @@ Feature: Grocery API
     Then status 201
     And response.message == "success"
 
+  @invalidPayload
   Scenario: Send an invalid payload while adding a new product
     Given path '/add'
     When method post
     Then status 400
     And response.message == "Request body has invalid format."
 
-  @deneme01
+  @productNotFound
   Scenario: Search the product that has not found
     Given header Content-Type = 'application/json'
     And path '/allGrocery/cherry'
     When method get
     Then status 404
     And match response.message == "The product has not found"
-
-
-
-
