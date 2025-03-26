@@ -4,6 +4,7 @@ Feature: Grocery API
       # Set a configuration for the payload
     * url baseUrl
 
+  @deneme
   Scenario: Get All Products from Grocery
     Given header Content-Type = 'application/json'
     And path '/allGrocery'
