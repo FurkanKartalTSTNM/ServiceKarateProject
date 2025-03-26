@@ -53,6 +53,7 @@ Feature: Grocery API
     Then status 400
     And response.message == "Request body has invalid format."
 
+  @deneme01
   Scenario: Search the product that has not found
     Given header Content-Type = 'application/json'
     And path '/allGrocery/cherry'
