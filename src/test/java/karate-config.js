@@ -7,7 +7,8 @@ function fn() {
   var config = {
     env: env,
     getUri: 'https://jsonplaceholder.typicode.com/todos',
-    postUri: 'https://reqres.in/api'
+    postUri: 'https://reqres.in/api',
+    baseUrl: 'https://ad4b627a-bbd1-4ea3-a678-af41ceb5bfb1.mock.pstmn.io'
   }
   if (env == 'dev') {
     // customize
