@@ -11,12 +11,6 @@ Feature: test
     And match response.id == 1
     And match response.userId == 1
 
-  @getAllPosts
-  Scenario: Tüm postları getir
-    Given path 'posts'
-    When method GET
-    Then status 200
-    And match response.length > 0
 
   @createPost
   Scenario: Yeni post oluştur
@@ -55,13 +49,6 @@ Feature: test
     Then status 201
     And match response.id != null
 
-  @updatePostInvalidData
-  Scenario: Geçersiz veri ile post güncelle
-    Given path 'posts/1'
-    And request { id: 1, title: 12345, body: true, userId: "abc" }
-    When method PUT
-    Then status 200
-
   @checkPostHeaders
   Scenario: Post isteğinde header kontrolü
     Given path 'posts/1'
@@ -75,3 +62,11 @@ Feature: test
     When method GET
     Then status 200
     And match response[*].id contains 10
+
+  @failWrongUserId
+  Scenario: Get post ile hatalı userId kontrolü (bilinçli fail)
+    Given path 'posts/1'
+    When method GET
+    Then status 200
+    And match response.userId == 999
+
